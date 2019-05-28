@@ -1,1 +1,1 @@
-test git from file test.txt
+test git from pycharm test.txt
