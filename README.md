@@ -24,7 +24,7 @@
 ### binary
 
 | description | name of method | usage | example | 
-|  ---   |  :---- | :---- | :---- |  :---- | 
+|  ---   |  :---- | :---- | :---- |  
 | **add** |  (`__add__`)  |  `object + another_object`  |  `1 + 21` , ` a + b`     | 
 | **sub** |  (`__sub__`)  |  `object - another_object`  |  `1 - 21` , ` a - b`     | 
 | **div** |  (`__div__`)  |  `object / another_object`  |  `1 / 21` , ` a / b`     | 
