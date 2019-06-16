@@ -9,7 +9,7 @@ lst = [1, 2, 3]
 lst_aug = [5, 8, 11, 1, 1, 1]
 print(id(lst), lst)
 
-lst.append(100)
+lst.append(100)   # lst = lst + [100]
 print(id(lst), lst)
 
 lst.extend(lst_aug)
@@ -22,6 +22,7 @@ lst.remove(100)
 print(id(lst), lst)
 
 out = lst.pop()
+# out = lst.pop(2)
 print(id(lst), lst, out)
 
 
