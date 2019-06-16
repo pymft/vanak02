@@ -4,9 +4,7 @@ pattern = "*"
 i = 1
 while i <= n:
     white = " " * (n - i)
-    if i == 1:
-        stars = pattern
-    elif i == n:
+    if i == 1 or i == n:
         stars = pattern * (2 * i - 1)
     else:
         mid_whites = " " * (2 * i - 3)
