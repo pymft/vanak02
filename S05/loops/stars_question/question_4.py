@@ -1,19 +1,19 @@
 n = 6
 pattern = "*"
 
-i = 1
-while i <= n:
-    white = " " * (n - i)
-    if i == 1 or i == n:
-        stars = pattern * (2 * i - 1)
-    else:
-        mid_whites = " " * (2 * i - 3)
-        stars = pattern + mid_whites + pattern
 
+print(" "*(n-1) + pattern)
+i = 2
+
+while i < n:
+    white = " " * (n - i)
+    mid_whites = " " * (2 * i - 3)
+    stars = pattern + mid_whites + pattern
     line = white + stars
     print(line)
     i = i + 1
 
+print(pattern * (2 * n - 1))
 
 # OUTPUT
 #
