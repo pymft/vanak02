@@ -1,12 +1,13 @@
 ```python
 n = 5
-pattern = "*"
+Patternn = "*"
 
 # write codes here 
 
 ```
 
-# Patter No. 1
+# Pattern No. 1
+```
 *
 **
 ***
@@ -15,7 +16,7 @@ pattern = "*"
 ******
 ```
 
-# Patter No. 2
+# Pattern No. 2
 
 ```
      *
@@ -26,7 +27,7 @@ pattern = "*"
 ***********
 ```
 
-# Patter No. 3
+# Pattern No. 3
 
 ```
      *
@@ -36,7 +37,7 @@ pattern = "*"
  *********
 *         *
 ```
-# Patter No. 4
+# Pattern No. 4
 
 ```
      *
