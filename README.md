@@ -25,17 +25,17 @@
 
 
 | description | name of method | usage | example | 
-|  ---   |  :---- | :---- | :---- |  :---- | 
+|  ---   |  :---- | :---- | :---- |
 | **negation** |  (`__neg__`)  |  `-self`  |  `-a` , `-1` |
 
 | description | name of method | usage | example | 
-|  ---   |  :---- | :---- | :---- |  :---- | 
+|  ---   |  :---- | :---- | :---- |  
 | **not** |  (`__not__`)  |  `not self`  |  `not True`  |
 
 ### binary
 
 | description | name of method | usage | example | 
-|  ---   |  :---- | :---- | :---- |  :---- | 
+|  ---   |  :---- | :---- | :---- |  
 | **add** |  (`__add__`)  |  `self + other`  |  `1 + 21` , `"hello" + "world"`     | 
 | **sub** |  (`__sub__`)  |  `self - other`  |  `1 - 21` , `{1, 2, 3, 4} - {1, 2}`     | 
 | **div** |  (`__div__`)  |  `self / other`  |  `1 / 21` , ` 102.1 / 2`     | 
@@ -46,7 +46,7 @@
 
 
 | description | name of method | usage | example | 
-|  ---   |  :---- | :---- | :---- |  :---- | 
+|  ---   |  :---- | :---- | :---- |  
 | **eq** |  (`__eq__`)  |  `self == other`  |  `1 == 21`, `(1, 2) == (1, 2)`  |
 | **ne** |  (`__ne__`)  |  `self != other`  |  `1 != 21`  |
 | **gt** |  (`__gt__`)  |  `self > other`  |  `1 > 21`  |
@@ -56,7 +56,7 @@
 
 
 | description | name of method | usage | example | 
-|  ---   |  :---- | :---- | :---- |  :---- | 
+|  ---   |  :---- | :---- | :---- | 
 | **and** |  (`__and__`)  |  `self and other`  |  `True and True`  |
 | **or** |  (`__or__`)  |  `self or other`  |  `True or False`  |
 | **is** |    |  `self is other`  |  `a is b`  |
