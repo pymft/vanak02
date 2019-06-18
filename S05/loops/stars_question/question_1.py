@@ -1,14 +1,14 @@
-
 n = 6
 pattern = "*"
 
 i = 1
 while i <= n:
-    print(pattern * i)
+    line = pattern * i
+    print(line)
     i = i + 1
 
 
-## OUTPUT :
+# OUTPUT :
 #
 # *
 # **
