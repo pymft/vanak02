@@ -23,7 +23,7 @@ def is_triangle(sides):
 def type_of_triangle(triangle):
     types = []
     if is_triangle(triangle):
-
+        pass
 
 
 
