@@ -1,0 +1,1 @@
+[jeff knupp's blog post](https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/)
