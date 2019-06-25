@@ -33,8 +33,13 @@ def pascal_row(n):
     return res
 
 
+def pascal(n):
+    res = []
+    for i in range(n):
+        res.append(pascal_row(i))
+    return res
+
 if __name__ == '__main__':
-    for i in range(10):
-        print(pascal_row(i))
+    print(pascal(10))
 
 
