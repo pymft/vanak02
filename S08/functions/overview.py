@@ -24,6 +24,22 @@ def combination(m, n):
     return int(c)
 
 
-for i in range(10):
-    print(combination(9, i))
+def pascal_row(n):
+    res = []
+    for i in range(n+1):
+        tmp = combination(n, i)
+        res.append(tmp)
+
+    return res
+
+
+def pascal(n):
+    res = []
+    for i in range(n):
+        res.append(pascal_row(i))
+    return res
+
+if __name__ == '__main__':
+    print(pascal(10))
+
 
