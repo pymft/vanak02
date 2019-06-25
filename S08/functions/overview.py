@@ -1,5 +1,3 @@
-
-
 def factorial(t):
     """
         computes factorial  .blaah blaah
@@ -26,7 +24,7 @@ def combination(m, n):
 
 def pascal_row(n):
     res = []
-    for i in range(n+1):
+    for i in range(n + 1):
         tmp = combination(n, i)
         res.append(tmp)
 
@@ -35,9 +33,10 @@ def pascal_row(n):
 
 def pascal(n):
     res = []
-    for i in range(n):
+    for i in range(n + 1):
         res.append(pascal_row(i))
     return res
+
 
 def show_pascal(n):
     for line in pascal(n):
@@ -46,5 +45,3 @@ def show_pascal(n):
 
 if __name__ == '__main__':
     print(show_pascal(10))
-
-
