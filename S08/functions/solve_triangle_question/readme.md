@@ -1,1 +1,1 @@
-[link to directory](./S07/triangles)
+[link to directory](../../S07/triangles)
