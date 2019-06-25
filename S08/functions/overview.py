@@ -39,7 +39,12 @@ def pascal(n):
         res.append(pascal_row(i))
     return res
 
+def show_pascal(n):
+    for line in pascal(n):
+        print(*line)
+
+
 if __name__ == '__main__':
-    print(pascal(10))
+    print(show_pascal(10))
 
 
