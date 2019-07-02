@@ -1,46 +1,28 @@
-def cyan(fn):
-    def inner(x):
-        out = "\033[36m"
-        out += fn(x)
-        out += "\033[0m"
-        return out
+def colorize(color_name):
+    color_map = {'red': 1,
+                 'green': 2,
+                 'yellow': 3,
+                 'blue': 4,
+                 'cyan': 6,
+                 'purple': 5,
+                 'gray': 7}
+    def color(fn):
+        def inner(x):
+            out = "\033[3" + str(color_map[color_name]) + "m"
+            out += fn(x)
+            out += "\033[0m"
+            return out
 
-    return inner
-
-
-def red(fn):
-    def inner(x):
-        out = "\033[31m"
-        out += fn(x)
-        out += "\033[0m"
-        return out
-
-    return inner
-
-
-def green(fn):
-    def inner(x):
-        out = "\033[32m"
-        out += fn(x)
-        out += "\033[0m"
-        return out
-
-    return inner
+        return inner
+    return color
 
 
-def blue(fn):
-    def inner(x):
-        out = "\033[34m"
-        out += fn(x)
-        out += "\033[0m"
-        return out
-
-    return inner
-
-
-@green
+@colorize('yellow')
 def say_hello(name):
     return "Hello " + name
 
 
 print(say_hello("Jack"))
+
+# weird_result = colorize('red')(say_hello)("Jack")
+# print(weird_result)
