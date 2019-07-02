@@ -1,16 +1,16 @@
 def decorate(fn):
     def inner(x):
-        out = "*"
+        out = "$"
         out += fn(x)
-        out += "*"
+        out += "$"
         return out
 
     return inner
 
 
+@decorate
 def say_hello(name):
     return "Hello " + name
 
 
-say_hello = decorate(say_hello)
 print(say_hello("Jack"))
