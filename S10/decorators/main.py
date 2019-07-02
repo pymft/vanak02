@@ -13,4 +13,5 @@ def say_hello(name):
     return "Hello " + name
 
 
-print(say_hello("Jack"))
+res = say_hello("Jack")
+print(res)

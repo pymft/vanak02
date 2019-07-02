@@ -12,7 +12,7 @@ def log(fn):
     return inner
 
 
-@log
+@log('output1.log')
 def factorial(n):
     fact = 1
     i = 1
@@ -22,7 +22,7 @@ def factorial(n):
     return fact
 
 
-@log
+@log('out2.log')
 def mysum(a, b):
     out = a + b
     return out
