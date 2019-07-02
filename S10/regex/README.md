@@ -23,17 +23,17 @@
 * `{m, n}?` 	from m to n, as few as possible
 
 ## Special sequences
-*`\A` 	    start of string
-*`\b` 	    matches empty string at word boundary (between \w and \W)
-*`\B` 	    matches empty string not at word boundary
-*`\d` 	    digit
-*`\D` 	    non-digit
-*`\s` 	    whitespace: [ \t\n\r\f\v]
-*`\S` 	    non-whitespace
-*`\w` 	    alphanumeric: [0-9a-zA-Z_]
-*`\W` 	    non-alphanumeric
-*`\Z` 	    end of string
-*`\g<id>` 	matches a previously defined group
+* `\A` 	    start of string
+* `\b` 	    matches empty string at word boundary (between \w and \W)
+* `\B` 	    matches empty string not at word boundary
+* `\d` 	    digit
+* `\D` 	    non-digit
+* `\s` 	    whitespace: [ \t\n\r\f\v]
+* `\S` 	    non-whitespace
+* `\w` 	    alphanumeric: [0-9a-zA-Z_]
+* `\W` 	    non-alphanumeric
+* `\Z` 	    end of string
+* `\g<id>` 	matches a previously defined group
 
 ## Special sequences
 * `(?iLmsux)` 	    matches empty string, sets re.X flags
