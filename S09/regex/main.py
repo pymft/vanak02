@@ -17,5 +17,6 @@ def read_from_site(url):
 pat = r"\b\w+@[\w\.]+\b"
 text = read_from_site("https://www.mtu.edu/mechanical/people/faculty-staff/")
 
+print(text)
 res = re.findall(pat, text)
 print(res)
