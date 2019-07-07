@@ -1,10 +1,10 @@
 def factorial(t):
     """
-        computes factorial  .blaah blaah
+    computes factorial  .blaah blaah
 
-        :param t: an integer number
-        :return: factorial
-        """
+    :param t: an integer number
+    :return: factorial
+    """
     res = 1
     while t:
         res = res * t

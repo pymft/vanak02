@@ -1,0 +1,2 @@
+class NegativeValueOfFactorialError(ArithmeticError):
+    pass
