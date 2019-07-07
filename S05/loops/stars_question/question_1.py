@@ -4,7 +4,7 @@ pattern = "*"
 i = 1
 while i <= n:
     line = pattern * i
-    print(line)
+    print(f"{line}")
     i = i + 1
 
 
