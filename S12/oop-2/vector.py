@@ -3,10 +3,16 @@ class Vector:
         self.x = x
         self.y = y
 
+    def add(self, b):
+        x_new = self.x + b.x
+        y_new = self.y + b.y
 
-def add_vectors(a, b):
-    # complete me
+        return Vector(x_new, y_new)
+
 
 v1 = Vector(3, 4)
 v2 = Vector(10, 1)
-v3 = add_vectors(v1, v2)
+v3 = v1.add(v2)
+v4 = v1.add(v3)
+v6 = v4.add(v3)
+print(v3.x, v3.y)
