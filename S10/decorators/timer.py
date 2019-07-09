@@ -20,6 +20,7 @@ def factorial(n):
         n -= 1
     return fact
 
+# factorial = timit(factorial)
 
 res = factorial(30000)
 print(res)
