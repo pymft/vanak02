@@ -17,6 +17,20 @@ def colorize(color_name):
     return color
 
 
+def red(fn):
+    def inner(x):
+        out = fn(x)
+        if out.startswith("\033["):
+            # change color
+            pass
+        else:
+            out = "\033[31m" + out + "\033[0m"
+
+        return out
+
+    return inner
+
+
 @colorize('yellow')
 def say_hello(name):
     return "Hello " + name
