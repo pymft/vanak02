@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page Title</title>
+</head>
+<body>
+<h1>Main Page</h1>
+<table width="100%">
+    {% for i in range(rows) %}
+    <tr>
+        {% for j in range(cols) %}
+        <td>{{ (i+1) * (j+1) }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
