@@ -4,11 +4,11 @@ import urllib.request
 def read_from_site(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
-    fp = urllib.request.urlopen(req)
-    mybytes = fp.read()
+    with urllib.request.urlopen(req) as fp:
+        mybytes = fp.read()
 
     mystr = mybytes.decode("utf8")
-    fp.close()
+
 
     return mystr
 
